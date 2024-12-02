@@ -8,7 +8,7 @@ app.use(express.json());
 
 const ingestionProcesses = {};
 
-app.post("/start-ingestion", (req, res) => {
+app.post("/ingest", (req, res) => {
   const processId = uuidv4();
   ingestionProcesses[processId] = {
     status: "In Progress",
@@ -21,7 +21,7 @@ app.post("/start-ingestion", (req, res) => {
   });
 });
 
-app.get("/check-status/:processId", (req, res) => {
+app.get("/ingest/status/:processId", (req, res) => {
   const { processId } = req.params;
 
   if (ingestionProcesses[processId]) {
