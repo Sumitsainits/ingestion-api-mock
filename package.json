@@ -1,0 +1,16 @@
+{
+  "name": "ingestion-api",
+  "version": "1.0.0",
+  "description": "this is a mock api ",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i",
+    "start": "node index.js"
+  },
+  "author": "Sumit Saini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "uuid": "^11.0.3"
+  }
+}
